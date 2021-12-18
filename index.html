@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 8 - Affine Cipher</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <h1 class="header-title">Affine Cipher</h1>
+            <p class="header-subtitle">Kelompok 8 - Kriptografi</p>
+        </div>
+    </header>
+    <div id="main-content">
+        <div class="input-container insert-data">
+            <div class="label label-insert">
+                <p class="title">Insert</p>
+                <div class="subtitle-wrapper">
+                    <p class="subtitle subtitle-insert">Plaintext</p>
+                    <img src="./assets/dropdown.svg" alt="dropdown">
+                </div>
+            </div>
+            <div class="input-wrapper input-insert-wrapper">
+                <textarea name="input-insert" id="input-insert" class="input input-insert"></textarea>
+            </div>
+        </div>
+        <div class="gap">
+            <img src="./assets/arrow.svg" alt="arrow">
+        </div>
+        <div class="key-management">
+            <div class="label label-key">
+                <div class="title title-key">
+                    <p class="title-enc">ENKRIPSI</p>
+                    <p class="title-dec">DEKRIPSI</p>
+                </div>
+                <div class="subtitle-wrapper">
+                    <p class="subtitle subtitle-key">Affine Cipher</p>
+                    <img src="./assets/dropdown-red.svg" alt="dropdown">
+                </div>
+            </div>
+            <div class="key-wrapper">
+                <div class="key key-a">
+                    <p class="label-key-counter">KEY / A</p>
+                    <div class="key-counter">
+                        <button class="counter min-counter-key-a">-</button>
+                        <input type="number" class="key-value key-a-value" value="1" />
+                        <button class="counter plus-counter-key-a">+</button>
+                    </div>
+                </div>
+                <div class="key key-b">
+                    <p class="label-key-counter">KEY / B</p>
+                    <div class="key-counter">
+                        <button class="counter min-counter-key-b">-</button>
+                        <input type="number" class="key-value key-b-value" value="1" />
+                        <button class="counter plus-counter-key-b">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="alphabet-wrapper">
+                <p class="label-key-counter">ALPHABET</p>
+                <input type="text" class="alphabet" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" disabled>
+            </div>
+        </div>
+        <div class="gap">
+            <img src="./assets/arrow.svg" alt="arrow">
+        </div>
+        <div class="input-container result-data">
+            <div class="label label-result">
+                <p class="title">Result</p>
+                <div class="subtitle-wrapper">
+                    <p class="subtitle subtitle-result">Ciphertext</p>
+                    <img src="./assets/dropdown.svg" alt="dropdown">
+                </div>
+            </div>
+            <div class="input-wrapper input-result-wrapper">
+                <textarea name="input-result" id="input-result" class="input input-result" disabled></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alert -->
+    <div class="modal-container">
+        <div class="modal-wrapper">
+            <div class="close-button-wrapper">
+                <button class="close-button">
+                    <img src="./assets/close.svg" alt="Close">
+                </button>
+            </div>
+            <div class="modal-text-wrapper">
+                <p class="modal-text">Nomor yang anda masukan bukan hasil dari Complicative Invers 26!</p>
+            </div>
+            <div class="confirm-button-wrapper">
+                <button class="confirm-button">OKE</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
